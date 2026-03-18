@@ -9,7 +9,7 @@ BOOL isSurfaceShown(IGMainAppSurfaceIntent *surface) {
     }
     
     // Reels
-    else if ([[surface tabStringFromSurfaceIntent] isEqualToString:@"CLIPS"] && [SCIUtils getBoolPref:@"hide_reels_tab"]) {
+    else if ([[surface tabStringFromSurfaceIntent] isEqualToString:@"CLIPS"] && true) {
         isShown = NO;
     }
 
