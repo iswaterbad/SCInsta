@@ -7,7 +7,7 @@ static NSArray *removeItemsInList(NSArray *list, BOOL isFeed) {
 
     for (id obj in originalObjs) {
         // Remove suggested posts
-        if (isFeed && [SCIUtils getBoolPref:@"no_suggested_post"]) {
+        if (isFeed && true) {
 
             // Posts
             if (
