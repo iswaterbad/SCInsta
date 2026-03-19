@@ -5,7 +5,7 @@
 // Confirmation handlers
 
 #define CONFIRMPOSTLIKE(orig)                             \
-    if (true) {           \
+    if ([SCIUtils getBoolPref:@"like_confirm"]) {           \
         NSLog(@"[SCInsta] Confirm post like triggered");  \
                                                           \
         [SCIUtils showConfirmation:^(void) { orig; }];    \
