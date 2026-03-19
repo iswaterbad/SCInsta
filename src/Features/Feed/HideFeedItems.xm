@@ -29,7 +29,7 @@ static NSArray *removeItemsInList(NSArray *list, BOOL isFeed) {
         }
 
         // Remove suggested reels (carousel)
-        if (isFeed && [SCIUtils getBoolPref:@"no_suggested_reels"]) {
+        if (isFeed && true) {
             if ([obj isKindOfClass:%c(IGFeedScrollableClipsModel)]) {
                 NSLog(@"[SCInsta] Hiding suggested reels carousel");
 
