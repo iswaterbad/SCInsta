@@ -30,7 +30,7 @@
 
 %hook IGSundialFeedViewController
 - (void)_refreshReelsWithParamsForNetworkRequest:(NSInteger)arg1 userDidPullToRefresh:(BOOL)arg2 {
-    if ([SCIUtils getBoolPref:@"prevent_doom_scrolling"]) {
+    if (true) {
         IGRefreshControl *_refreshControl = MSHookIvar<IGRefreshControl *>(self, "_refreshControl");
         [self refreshControlDidEndFinishLoadingAnimation:_refreshControl];
 
